@@ -1,0 +1,245 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: rgb(22, 194, 213);
+}
+
+.dark-mode button {
+  background-color: #444;
+  color: white;
+}
+
+.dark-mode button:hover {
+  background-color: #666;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+h1, h2, h3 {
+  color: #333;
+  transition: color 0.3s;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+  color: #ddd; 
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s; 
+}
+
+.dark-mode li {
+  background: #333; 
+  border-color: #444; 
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  transition: border-color 0.3s; 
+}
+
+.dark-mode input[type="text"] {
+  border-color: #444; 
+}
+
+/* Home Page specific styling */
+.featured-books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.featured-book-item {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s; 
+}
+
+.dark-mode .featured-book-item {
+  background-color: #444; 
+  border-color: #666; 
+}
+
+.featured-book-item h3 {
+  margin-top: 0;
+}
+
+.featured-book-item p {
+  margin-bottom: 10px;
+}
+
+.view-genres-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* .dark-mode .view-genres-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #444;
+  color: rgb(22, 194, 213);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+} */
+
+.view-genres-btn:hover {
+  background-color: #005bb5;
+}
+
+
+/* Book Details specific styling */
+.book-details {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .book-details {
+  background-color: #444; 
+}
+
+.book-details h1 {
+  margin-top: 0;
+}
+
+.book-details p {
+  margin-bottom: 10px;
+}
+
+.book-details button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #0070f3;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+.book-details button:hover {
+  background-color: #005bb5;
+}
+
+/* Genres Page specific styling */
+.genres-list {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: rgb(5, 196, 209);
+  border-radius: 8px;
+}
+
+.dark-mode .genres-list {
+  background-color: #333; 
+}
+
+.genres-list li {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.dark-mode .genres-list li {
+  background-color: #444; 
+  color: #ddd;
+}
+
+.genres-list li:hover {
+  background-color: #f1f1f1;
+}
+
+.dark-mode .genres-list li:hover {
+  background-color: #555; 
+}
+
+.genres-list li a {
+  color: black;
+  text-decoration: none;
+}
+
+.dark-mode .genres-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.genres-list li a:hover {
+  text-decoration: underline;
+}
+
+/* Authors Page specific styling */
+.authors-list {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: rgb(5, 196, 209);;
+  border-radius: 8px;
+}
+
+.dark-mode .authors-list {
+  background-color: #333; 
+}
+
+.authors-list li {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.dark-mode .authors-list li {
+  background-color: #444; 
+  color: #ddd; 
+}
+
+.authors-list li p {
+  margin: 0;
+}
